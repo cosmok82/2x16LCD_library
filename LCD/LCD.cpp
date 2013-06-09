@@ -171,9 +171,9 @@ void LCDClass::print(const char* s, uint8_t x, uint8_t y) {
 }
 
 void LCDClass::scrollLeft(String text, uint8_t row, int ms) {
-	uint8_t dim = (text.length() - 16);
+	int dim = (text.length() - 16);
 	String crop = "";
-	for (uint8_t i = 0; i <= dim; i++) {
+	for (int i = 0; i <= dim; i++) {
 		LCDClass::goTo(row, 1);
 		crop = text.substring(i, 16 + i);
 		LCDClass::print(&crop[0]);
@@ -182,9 +182,9 @@ void LCDClass::scrollLeft(String text, uint8_t row, int ms) {
 }
 
 void LCDClass::scrollRight(String text, uint8_t row, int ms) {
-	uint8_t dim = (text.length() - 16);
+	int dim = (text.length() - 16);
 	String crop = "";
-	for (uint8_t i = dim; i >= 0; i--) {
+	for (int i = dim; i >= 0; i--) {
 		LCDClass::goTo(row, 1);
 		crop = text.substring(i, 16 + i);
 		LCDClass::print(&crop[0]);
