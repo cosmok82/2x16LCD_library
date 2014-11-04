@@ -6,7 +6,7 @@
 </a>
 </div>
 <br>
-Author: Orlando Cosimo.<br>
+Author: Cosimo Orlando.<br>
 Blog: http://creativityslashdesign.tk/
 <br>
 Library for 2x16 LCD (like JDH162A or HD44780) written for Energia and Stellaris Launchpad (LM4F).
